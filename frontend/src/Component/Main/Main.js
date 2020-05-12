@@ -14,8 +14,8 @@ class Main extends React.Component{
     }    
       
     render(){
-        let Options=this.props.Data.map((index)=>{
-          return <Tasks name={index.name} price={index.price} id={index}/>
+        let Options=this.props.Data.map((index,element)=>{
+          return <Tasks name={index.name} price={index.price} id={element}/>
         })
         return(
            <div className="bg"> 

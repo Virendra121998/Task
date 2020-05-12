@@ -1,16 +1,18 @@
 import axios from 'axios'
 
- export const Add=(price)=>{
+ export const Add=(price,id)=>{
     return{
         type:'ADD',
-        price:price
+        price:price,
+        id:id
     }
 }
 
-export const Delete=(price)=>{
+export const Delete=(price,id)=>{
     return{
         type:'DELETE',
-        price:price
+        price:price,
+        id:id
     }
 }
 

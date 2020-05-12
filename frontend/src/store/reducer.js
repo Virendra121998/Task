@@ -6,9 +6,11 @@ const initialState={
 }
 
 const Reducer=(state=initialState,action)=>{
-   let show=[...state.show]
-   show[action.id]=true; 
+   
     if(action.type==='ADD'){
+        let show=[...state.show]
+        show[action.id]=true;
+        console.log(action.id)
         if(state.counter<3)
          return{
            ...state,
@@ -62,9 +64,9 @@ const Reducer=(state=initialState,action)=>{
     if(action.type==='SHOWDATA')
     {
         let show=[];
-        action.data.forEach(element => {
-          show[element]=false;  
-        });
+        console.log(action.data)
+        for(var i=0;i<action.data.length;i++)
+         show.push(false)
         return{
             ...state,
             tasks:action.data,
