@@ -1,0 +1,39 @@
+.bg{
+    background-color:rgb(209, 209, 250);
+}
+
+.header{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 5%;
+    font-size: 40px;
+}
+
+.l1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: relative;
+    left: 3%;
+}
+.l2{
+    position: relative;
+    left: 65%;
+    font-weight: 600;
+}
+.main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.left{
+    position: relative;
+}
+
+.right{
+    position: fixed;
+    left:65%;
+    top:30%
+
+}
+
